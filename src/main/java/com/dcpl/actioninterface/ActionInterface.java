@@ -10,6 +10,8 @@ public interface ActionInterface {
 	//Add all user actions abstract methods to achieve Abstraction
 	
 	public void scrollByVisibilityOfElement(WebDriver driver, WebElement ele);
+	public void scrollDown(WebDriver driver,WebElement ele);
+	public void scrollUP(WebDriver driver,WebElement ele);
 	public void click(WebDriver driver,WebElement ele);
 	public boolean isDisplayed(WebDriver driver,WebElement ele);
 	public boolean type(WebElement ele,String text);

@@ -41,12 +41,28 @@ public class Action extends BaseClass implements ActionInterface {
 		js.executeScript("arguments[0].scrollIntoView();", ele);
 
 	}
+	
+	@Override
+		public void scrollDown(WebDriver driver, WebElement ele) {
+			// TODO Auto-generated method stub
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)", "");
+			
+		}
+	
+	@Override
+	public void scrollUP(WebDriver driver, WebElement ele) {
+		// TODO Auto-generated method stub
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(250,0)", "");
+	}
 
 	@Override
 	public  void click(WebDriver driver, WebElement ele) {
 
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).click().build().perform();
+		//System.out.println("Clicked on " + ele + "button");
 
 	}
 
@@ -142,9 +158,9 @@ public class Action extends BaseClass implements ActionInterface {
 			flag = false;
 		} finally {
 			if (flag) {
-				System.out.println("Successfully entered value");
+				System.out.println("Successfully entered " + text + " value");
 			} else {
-				System.out.println("Unable to enter value");
+				System.out.println("Unable to enter value " + text + " value");
 			}
 
 		}
@@ -195,9 +211,9 @@ public class Action extends BaseClass implements ActionInterface {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Option selected by Index");
+				System.out.println("Option " + index + " selected by Index");
 			} else {
-				System.out.println("Option not selected by Index");
+				System.out.println("Option " + index + " not selected by Index");
 			}
 		}
 	}
@@ -227,9 +243,9 @@ public class Action extends BaseClass implements ActionInterface {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Option selected by Value");
+				System.out.println("Option " + value + " selected by Value");
 			} else {
-				System.out.println("Option not selected by Value");
+				System.out.println("Option " + value +  " not selected by Value");
 			}
 		}
 	}
@@ -258,9 +274,9 @@ public class Action extends BaseClass implements ActionInterface {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Option selected by VisibleText");
+				System.out.println("Option " + visibletext + " selected by VisibleText");
 			} else {
-				System.out.println("Option not selected by VisibleText");
+				System.out.println("Option " + visibletext + " not selected by VisibleText");
 			}
 		}
 	}

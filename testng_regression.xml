@@ -17,8 +17,11 @@
 			<!--  <class name="com.dcpl.testcase.SalesLoginPageTest" />
 			<class name="com.dcpl.testcase.SalesHomePageTest" />
 			<class name="com.dcpl.testcase.AddNewCustomerPageTest" />
-			<class name="com.dcpl.testcase.SearchCustomerPageTest" />-->
+			<class name="com.dcpl.testcase.SearchCustomerPageTest" />
 			<class name="com.dcpl.testcase.OrderHeaderPageTest" />
+			<class name="com.dcpl.testcase.OrderDetailPageTest" />-->
+			<class name="com.dcpl.testcase.CreditAndAdvancePageTest" />
+			
 		
 		</classes>
 	</test> <!-- Test -->
