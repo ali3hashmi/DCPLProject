@@ -140,6 +140,7 @@
             <suiteXmlFile>${xmlFiles}</suiteXmlFile>
           </suiteXmlFiles>
         <systemPropertyVariables>
+          
           <appURL>${url}</appURL>
         </systemPropertyVariables>
         </configuration>
