@@ -43,7 +43,7 @@ public class SalesLoginPageTest extends BaseClass{
 	
 	@Test(groups = {"Smoke","Sanity"},dataProvider = "salesLoginCredentials",dataProviderClass = SalesDataProvider.class,
 		description = "Performing user login for sales portal")
-	public void salesLoginTest(String hrmsid,String password) throws Throwable {
+	public void salesLoginTest(HashMap<String,String> hashMapValue) throws Throwable {
 		
 		loginPage =new LoginPage();
 		saleHomePage=new SalesHomePage();
@@ -51,7 +51,8 @@ public class SalesLoginPageTest extends BaseClass{
 		Log.info("User going to perform sale login test");
 		Log.info("Enter HRMSID and Password");
 		//int hrms =Integer.parseInt(hrmsid);
-		saleHomePage=loginPage.salesLogin(hrmsid,password,saleHomePage);
+		saleHomePage=loginPage.salesLogin(hashMapValue.get("hrms_id"),
+				hashMapValue.get("password"),saleHomePage);
 		//String actualSaleHomePageTitle= action.getTitle(getDriver());
 		//String expectedSaleHomePageTitle ="Sales - Dashboard - Sales";
 		//Assert.assertEquals(actualSaleHomePageTitle, expectedSaleHomePageTitle);

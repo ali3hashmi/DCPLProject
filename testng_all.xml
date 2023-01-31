@@ -3,6 +3,7 @@
 <suite name="Suite">
 <listeners>
 		<listener class-name="com.dcpl.utility.ListenerClass">
+		<listener class-name="com.dcpl.failedtestcases.RetryListenerClass"></listener>
 		</listener>
 	</listeners>
 	<test thread-count="5" name="Test_All">

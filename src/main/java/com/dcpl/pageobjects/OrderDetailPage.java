@@ -320,6 +320,7 @@ public class OrderDetailPage extends Action {
 			//System.out.println(length);
 			if(length.equalsIgnoreCase(lengthSearch)) {
 
+				super.explicitWait(getDriver(), clickOnLength, Duration.ofSeconds(10));
 				ele.click();
 				count++;
 				break;
@@ -351,6 +352,7 @@ public class OrderDetailPage extends Action {
 			String hookType = ele.getText();
 			if(hookType.equalsIgnoreCase(hookTypeSearch)) {
 
+				super.explicitWait(getDriver(), clickOnHookType, Duration.ofSeconds(10));
 				ele.click();
 				count++;
 				break;
@@ -382,6 +384,7 @@ public class OrderDetailPage extends Action {
 			String polishType = ele.getText();
 			if(polishType.equalsIgnoreCase(polishTypeSearch)) {
 
+				super.explicitWait(getDriver(), clickOnPolishType, Duration.ofSeconds(10));
 				ele.click();
 				count++;
 				break;
@@ -410,6 +413,7 @@ public class OrderDetailPage extends Action {
 			String settingType = ele.getText();
 			if(settingType.equalsIgnoreCase(settingTypeSearch)) {
 
+				super.explicitWait(getDriver(), clickOnSettingType, Duration.ofSeconds(10));
 				ele.click();
 				count++;
 				break;

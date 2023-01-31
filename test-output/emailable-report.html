@@ -9,10 +9,81 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">RegressionTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">62,843</td><td>Regression</td><td></td></tr>
+<tr><td><a href="#t0">RegressionTest</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">190,878</td><td>Regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dcpl.testcase.CreditAndAdvancePageTest</td><td><a href="#m0">verifyCreditAdvacnceTest</a></td><td rowspan="1">1670321534481</td><td rowspan="1">46592</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.dcpl.testcase.StoreHeadConfirmationPageTest</td><td><a href="#m0">verifyingOrderConfirmationByStoreHead</a></td><td rowspan="1">1675151241127</td><td rowspan="1">14416</td></tr><tr><th colspan="4">RegressionTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">com.dcpl.testcase.StoreHeadConfirmationPageTest</td><td><a href="#m1">verifyingOrderConfirmationByStoreHead</a></td><td rowspan="2">1675151189189</td><td rowspan="2">14543</td></tr><tr class="retriedeven"><td><a href="#m2">verifyingOrderConfirmationByStoreHead</a></td></tr><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dcpl.testcase.CashierReceiptPageTest</td><td><a href="#m3">verifyReceiptsConfirmationByCashier</a></td><td rowspan="1">1675151140775</td><td rowspan="1">11212</td></tr><tr class="passedodd"><td rowspan="1">com.dcpl.testcase.CreateCustomerOrderTest</td><td><a href="#m4">verifyCustomerOrderOrderKindNo</a></td><td rowspan="1">1675151085796</td><td rowspan="1">44331</td></tr><tr class="passedeven"><td rowspan="1">com.dcpl.testcase.OrderConfirmationPageTest</td><td><a href="#m5">verifyOrderConfirmationByCashier</a></td><td rowspan="1">1675151162691</td><td rowspan="1">13797</td></tr></tbody>
 </table>
-<h2>RegressionTest</h2><h3 id="m0">com.dcpl.testcase.CreditAndAdvancePageTest#verifyCreditAdvacnceTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{occasion=Self, customerContactNumber=9746764977, dueDateYear=2022, subCategory=1, toWeightRange=100, intimation=Yes, hrms_id=75, vendorCode=BKK, polishTypeSearch=Matt Finish, password=Pass@123, intimationMode=Mail, skinPurity=1, deliveryAddress=Yes, occasiondate=10, lengthSearch=7.5&quot;, dueDateMonth=Nov, salesExecutiveID=4, Pieces=1, customerLoyaltyCard=, occasionmonth=Dec, metalColor=1, orderKind=New Order-NO, customerName=Ali Hashmi, fromWeightRange=1, metalWeightType=Range, hookTypeSearch=U Hook, settingTypeSearch=Open Setting, occasionyear=2022, dueDateDay=30, customerID=8, jewelType=Necklace, mainCategory=1, payAdvOption=Yes, printNameInBill=No, expectedWeightRange=100, occasionRemarks=Automation testing, segmentType=Gold}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RegressionTest</h2><h3 id="m0">com.dcpl.testcase.StoreHeadConfirmationPageTest#verifyingOrderConfirmationByStoreHead</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{fromday=31, password=Pass@123, orderno=, frommonth=Jan, orderstatus=Ready, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=11, toyear=2023}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;HP&apos;, ip: &apos;10.212.134.13&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6e063abaff2691c66fd6fc14a6c9c10, actions {actions=[org.openqa.selenium.interactions.Sequence@3a5e4f32]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63351}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63351/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6e063abaff2691c66fd6fc14a6c9c10
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at com.dcpl.actiondriver.Action.click(Action.java:64)
+	at com.dcpl.pageobjects.StoreHeadConfirmationPage.confirmTheOrder(StoreHeadConfirmationPage.java:135)
+	at com.dcpl.testcase.StoreHeadConfirmationPageTest.verifyingOrderConfirmationByStoreHead(StoreHeadConfirmationPageTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.dcpl.testcase.StoreHeadConfirmationPageTest#verifyingOrderConfirmationByStoreHead</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{fromday=31, password=Pass@123, orderno=, frommonth=Jan, orderstatus=Ready, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=11, toyear=2023}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;HP&apos;, ip: &apos;10.212.134.13&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa0aa4c1ddc7ee4b460b13715b42150c, actions {actions=[org.openqa.selenium.interactions.Sequence@5dacf18d]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63254}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63254/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa0aa4c1ddc7ee4b460b13715b42150c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at com.dcpl.actiondriver.Action.click(Action.java:64)
+	at com.dcpl.pageobjects.StoreHeadConfirmationPage.confirmTheOrder(StoreHeadConfirmationPage.java:135)
+	at com.dcpl.testcase.StoreHeadConfirmationPageTest.verifyingOrderConfirmationByStoreHead(StoreHeadConfirmationPageTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.dcpl.testcase.StoreHeadConfirmationPageTest#verifyingOrderConfirmationByStoreHead</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{fromday=31, password=Pass@123, orderno=, frommonth=Jan, orderstatus=Ready, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=11, toyear=2023}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;HP&apos;, ip: &apos;10.212.134.13&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19b8a7971bd711b917c56e68b1b412b8, actions {actions=[org.openqa.selenium.interactions.Sequence@602a3237]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63301/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19b8a7971bd711b917c56e68b1b412b8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at com.dcpl.actiondriver.Action.click(Action.java:64)
+	at com.dcpl.pageobjects.StoreHeadConfirmationPage.confirmTheOrder(StoreHeadConfirmationPage.java:135)
+	at com.dcpl.testcase.StoreHeadConfirmationPageTest.verifyingOrderConfirmationByStoreHead(StoreHeadConfirmationPageTest.java:54)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.dcpl.testcase.CashierReceiptPageTest#verifyReceiptsConfirmationByCashier</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{cashierhrms_id=15, cashierpassword=Pass@123}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.dcpl.testcase.CreateCustomerOrderTest#verifyCustomerOrderOrderKindNo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{customerContactNumber=9746764977, dueDateYear=2023, firstGiftVoucherNumber=23, subCategory=1, chequeDay=31, intimation=Yes, payAdvAmount=5000.00, chequeNumber=415263, type=Debit Card, vendorCode=BKK, password=Pass@123, intimationMode=Mail, deliveryAddress=Yes, cardBank=AXIS, occasiondate=31, lengthSearch=7.5&quot;, Pieces=1, cardAmount=25000.00, adjustmentNumber=6, customerLoyaltyCard=, metalColor=1, adjustType=Payment Voucher, orderKind=New Order-NO, cardExpiryMonth=3, customerName=Ali Hashmi, fromWeightRange=1, metalWeightType=Range, hookTypeSearch=U Hook, occasionyear=2023, customerID=8, jewelType=Necklace, expectedWeightRange=100, adjustmentAmount=1000.00, segmentType=Gold, cardNumber=4152639685, occasion=Self, chequeDDType=cheque, toWeightRange=100, cardBankName=Axis Bank, cardExpiryYear=2024, bankName=Axis Bank, hrms_id=75, polishTypeSearch=Matt Finish, skinPurity=1, nameOnCard=Hashmi, dueDateMonth=Jan, salesExecutiveID=4, accNumber=5263415296857485, occasionmonth=Jan, accHolderName=Hashmi, cardType=RUPAY, branchName=Banshankari, authID=41526, payModesOption1=Cash, chequeMonth=Jan, payModesOption2=ChequeDD, chequeAmount=5000.00, MultipleMode=No, chequeYear=2023, settingTypeSearch=Open Setting, dueDateDay=31, mainCategory=1, secondGiftVoucherNumber=24, payAdvOption=Yes, noOfGiftVouchers=2, printNameInBill=No, occasionRemarks=Automation testing, CashAmount=5000.00}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.dcpl.testcase.OrderConfirmationPageTest#verifyOrderConfirmationByCashier</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{fromday=31, password=Pass@123, orderno=, frommonth=Jan, tomonth=Jan, salesexecutive=Hashmi, fromyear=2023, today=31, hrms_id=15, toyear=2023}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -24,9 +24,19 @@ public class ConfirmOrderPage extends Action{
 	@FindBy(xpath = "//h3[normalize-space()='Order Confirm']")
 	private WebElement orderConfirmText;
 	
+	@FindBy(xpath = "//button[normalize-space()='Save & Proceed']")
+	private WebElement saveAndProceed;
+	
+	
 	public String verifyOrderConfirmPageText() {
 		
 		String actText = orderConfirmText.getText();
 		return actText;
+	}
+	
+	public ReceiptVoucherPage clickOnSaveAndProceed(ReceiptVoucherPage receiptVoucherPage) {
+		
+		super.click(getDriver(), saveAndProceed);
+		return new ReceiptVoucherPage();
 	}
 }

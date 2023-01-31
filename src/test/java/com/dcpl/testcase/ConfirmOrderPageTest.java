@@ -22,6 +22,8 @@ public class ConfirmOrderPageTest extends BaseClass{
 		super.LaunchApp(browser);
 	}
 	
+	
+	
 	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
 	public void closeWebApplication() throws InterruptedException {
 		

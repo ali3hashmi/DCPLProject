@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.dcpl.base.BaseClass;
 import com.dcpl.dataprovider.SalesDataProvider;
 import com.dcpl.pageobjects.LoginPage;
+import com.dcpl.pageobjects.OrderConfirmationPage;
 import com.dcpl.pageobjects.SalesHomePage;
 import com.dcpl.utility.Log;
 
@@ -23,6 +24,7 @@ public class SalesHomePageTest extends BaseClass {
 	
 	private LoginPage loginPage;
 	private SalesHomePage salesHomePage;
+	private OrderConfirmationPage orderConfirmationPage;
 	
 	
 	@Parameters("browser")
@@ -50,6 +52,7 @@ public class SalesHomePageTest extends BaseClass {
 		
 		loginPage=new LoginPage();
 		salesHomePage=new SalesHomePage();
+		orderConfirmationPage = new OrderConfirmationPage();
 		Log.startTestCase("Orders Menu Test");
 		salesHomePage=loginPage.salesLogin(hrmsid, password, salesHomePage);
 		boolean res=salesHomePage.ordersMenuVerification();

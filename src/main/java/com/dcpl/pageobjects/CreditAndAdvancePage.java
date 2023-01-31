@@ -86,6 +86,7 @@ public class CreditAndAdvancePage extends Action {
 		
 		super.scrollByVisibilityOfElement(getDriver(), prevBtn);
 		super.click(getDriver(), prevBtn);
+		//super.fluentWait(getDriver(), creditAndAdvanceText, 0);
 		return new OrderDetailPage();
 	}
 }

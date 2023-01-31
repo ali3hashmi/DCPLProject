@@ -190,4 +190,145 @@ public class SalesDataProvider {
 		}
 		return data;
 	}
+
+	//class - OrderConfirmationPageTest.java
+	//Test case - verifyOrderConfirmationByCashier
+	@DataProvider(name ="OrderConfirmationPageData")
+	public Object[][] getOrderConfirmationDetail() {
+
+		//total row count
+
+		int rows = obj.getRowCount("OrderConfirmationPage");
+
+		//total column count
+
+		int column = obj.getColumnCount("OrderConfirmationPage");
+
+		int actRows = rows -1;
+
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for(int i =0;i<actRows;i++) {
+
+			Map<String, String> hashMap = new HashMap<>();
+			for(int j=0;j<column;j++) {
+
+				hashMap.put(obj.getCellData("OrderConfirmationPage", j, 1),
+						obj.getCellData("OrderConfirmationPage", j, i+2));
+
+			}
+			data[i][0]=hashMap;
+		}
+
+		return data;
+
+
+	}
+
+	//class - CashierReceiptPageTest.java
+	//Test case - verifyReceiptsConfirmationByCashier
+	@DataProvider(name ="receiptsConfirmationPageData")
+	public Object[][] getReceiptsConfirmationDetail() {
+
+		//total row count
+
+		int rows = obj.getRowCount("CashierReceipts");
+
+		//total column count
+
+		int column = obj.getColumnCount("CashierReceipts");
+
+		int actRows = rows -1;
+
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for(int i =0;i<actRows;i++) {
+
+			Map<String, String> hashMap = new HashMap<>();
+			for(int j=0;j<column;j++) {
+
+				hashMap.put(obj.getCellData("CashierReceipts", j, 1),
+						obj.getCellData("CashierReceipts", j, i+2));
+
+			}
+			data[i][0]=hashMap;
+		}
+
+		return data;
+
+
+	}
+
+	//class - StoreHeadConfirmationPageTest.java
+	//Test case - verifyingOrderConfirmationByStoreHead
+	@DataProvider(name ="storeHeadConfirmationPageData")
+	public Object[][] getStoreHeadConfirmationDetail() {
+
+		//total row count
+
+		int rows = obj.getRowCount("StoreHeadConfirmationPage");
+
+		//total column count
+
+		int column = obj.getColumnCount("StoreHeadConfirmationPage");
+
+		int actRows = rows -1;
+
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for(int i =0;i<actRows;i++) {
+
+			Map<String, String> hashMap = new HashMap<>();
+			for(int j=0;j<column;j++) {
+
+				hashMap.put(obj.getCellData("StoreHeadConfirmationPage", j, 1),
+						obj.getCellData("StoreHeadConfirmationPage", j, i+2));
+
+			}
+			data[i][0]=hashMap;
+		}
+
+		return data;
+
+
+	}
+
+	//class - CreateCustomerOrderTest.java
+	//Test case - verifyCustomerOrderOrderKindNo
+	@DataProvider(name ="createCustomerOrderPageData")
+	public Object[][] getCreateCustomerOrderDetail() {
+
+		//total row count
+
+		int rows = obj.getRowCount("CreateCustomerOrderNo");
+
+		//total column count
+
+		int column = obj.getColumnCount("CreateCustomerOrderNo");
+
+		int actRows = rows -1;
+
+		//Created an object of array to store data
+		Object[][] data = new Object[actRows][1];
+
+		for(int i =0;i<actRows;i++) {
+
+			Map<String, String> hashMap = new HashMap<>();
+			for(int j=0;j<column;j++) {
+
+				hashMap.put(obj.getCellData("CreateCustomerOrderNo", j, 1),
+						obj.getCellData("CreateCustomerOrderNo", j, i+2));
+
+			}
+			data[i][0]=hashMap;
+		}
+
+		return data;
+
+
+	}
+
 }

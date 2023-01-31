@@ -40,6 +40,22 @@ public class SalesHomePage extends Action{
 	@FindBy(xpath = "//a[normalize-space()='Orders']")
 	private WebElement ordersMenu;
 	
+	@FindBy(xpath = "//a[normalize-space()='Order Confirmation']")
+	private WebElement orderConfirmationSubMenu;
+	
+	@FindBy(xpath = "//a[normalize-space()='Function']")
+	private WebElement functionMainMenu;
+	
+	@FindBy(xpath="//li[@class='dropdown open']//a[@role='button'][normalize-space()='Cashier']")
+	private WebElement cashierSubMenu;
+	
+	@FindBy(xpath = "//li[@class='dropdown dropdown-submenu open']//li[1]//a[1]")
+	private WebElement cashierReceipts;
+	
+	@FindBy(xpath = "//li[@class='dropdown dropdown-submenu open']//li[3]//a[1]")
+	private WebElement orderConfirmation;
+	
+	
 	public String getSalesHomeText() {
 		
 		String salesPageHomeText = salesHomeText.getText();
@@ -73,8 +89,34 @@ public class SalesHomePage extends Action{
 	
 	public boolean ordersMenuVerification() {
 		
+		
+		
 		return super.isDisplayed(getDriver(), ordersMenu);
 		
+	}
+	
+	public OrderConfirmationPage confirmCustomerOrder(OrderConfirmationPage orderConfirmationPage) {
+		
+		super.click(getDriver(), ordersMenu);
+		super.click(getDriver(), orderConfirmationSubMenu);
+		return new OrderConfirmationPage();
+	}
+	
+	public CashierReceiptPage confirmCustomerReceipts(CashierReceiptPage cashierReceiptPage) {
+		
+		super.click(getDriver(), functionMainMenu);
+		super.click(getDriver(), cashierSubMenu);
+		super.click(getDriver(), cashierReceipts);
+		return new CashierReceiptPage();
+		
+	}
+	
+	public StoreHeadConfirmationPage storeHeadConfirmation(StoreHeadConfirmationPage storeHeadConfirmationPage) {
+		
+		super.click(getDriver(), functionMainMenu);
+		super.click(getDriver(), cashierSubMenu);
+		super.click(getDriver(), orderConfirmation);	
+		return new StoreHeadConfirmationPage();
 	}
 	
 	

@@ -80,6 +80,7 @@ public class OrderHeaderPage extends Action{
 			String deliveryAddress) {
 
 		super.selectByValue(this.occasion, occasion);
+		super.fluentWait(getDriver(), this.occasionDate, 5);
 		super.click(getDriver(), this.occasionDate);
 		super.selectByVisibleText(occasionMonth,this.occasionMonth);
 		super.selectByVisibleText(occasionYear,this.occasionYear);
