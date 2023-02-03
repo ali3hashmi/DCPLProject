@@ -1,12 +1,13 @@
 package com.dcpl.actiondriver;
 
 import java.io.File;
+import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -784,7 +785,7 @@ public class Action extends BaseClass implements ActionInterface {
 	}
 	@Override
 	public  String screenShot(WebDriver driver, String filename) {
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date(0));
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir") + "/ScreenShots/" + filename + "_" + dateName + ".png";
@@ -803,7 +804,7 @@ public class Action extends BaseClass implements ActionInterface {
 	}
 	@Override
 	public  String getCurrentTime() {
-		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
+		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date(0));
 		return currentDate;
 	}
 
